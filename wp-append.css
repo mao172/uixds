@@ -4,6 +4,9 @@
 
 body.side-header #site-wrap {
     padding: 0;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #main.site-main {
@@ -27,5 +30,3 @@ body.side-header #site-wrap {
 #glt-translate-trigger {
     display: none;
 }
-
-

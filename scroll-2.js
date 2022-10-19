@@ -4,15 +4,20 @@ $(function () {
     var css = document.createElement("link");
     css.setAttribute("rel", "stylesheet");
     css.setAttribute("type", "text/css");
-    css.setAttribute("href", "https://cdn.jsdelivr.net/gh/mao172/uixds@main/style2.css");
+    css.setAttribute("href", "https://cdn.jsdelivr.net/gh/mao172/uixds/style2.css");
     document.getElementsByTagName("head")[0].appendChild(css);
 
     var css2 = document.createElement("link");
     css2.setAttribute("rel", "stylesheet");
     css2.setAttribute("type", "text/css");
-    css2.setAttribute("href", "https://cdn.jsdelivr.net/gh/mao172/uixds@main/wp-append.css");
+    css2.setAttribute("href", "https://cdn.jsdelivr.net/gh/mao172/uixds/wp-append.css");
     document.getElementsByTagName("head")[0].appendChild(css2);
 
+    $(window).on("load", function () {
+        $('.splash').css('display', 'none');
+    });
+
+    
     $("a[href='#top']").click(function () {
         $("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
