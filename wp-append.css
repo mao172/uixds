@@ -30,3 +30,64 @@ body.side-header #site-wrap {
 #glt-translate-trigger {
     display: none;
 }
+
+.textwidget:has(form) {
+    background-color: #1aaede;
+    height: 100vh;
+}
+
+.form-inner-wrap {
+    background-color: white;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 16px #999999;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.form-inner-wrap:before {
+    content: 'CONTACT';
+    border: soid 1px black;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+    padding: 4px;
+    color: #1aaede;
+}
+
+.form-wrap input,
+.form-wrap textarea {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #eeeeee;
+}
+
+.form-wrap span:has(input),
+.form-wrap span:has(textarea) {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.form-wrap input[type=submit] {
+    display: inline-block;
+    background-color: #f5c05a;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 8px;
+    font-size: x-large;
+}
+
+#footer .secondary {
+    background-color: white;
+
+}
+
+#footer .secondary a:hover,
+#footer .secondary a:focus,
+#footer .secondary a:active {
+    color: black;
+}
