@@ -1,4 +1,24 @@
+
 $(function () {
+
+    var css = document.createElement("link");
+    css.setAttribute("rel", "stylesheet");
+    css.setAttribute("type", "text/css");
+    css.setAttribute("href", "https://cdn.jsdelivr.net/gh/mao172/uixds@main/style2.css");
+    document.getElementsByTagName("head")[0].appendChild(css);
+
+    var css2 = document.createElement("link");
+    css2.setAttribute("rel", "stylesheet");
+    css2.setAttribute("type", "text/css");
+    css2.setAttribute("href", "https://cdn.jsdelivr.net/gh/mao172/uixds@main/wp-append.css");
+    document.getElementsByTagName("head")[0].appendChild(css2);
+
+    $("a[href='#top']").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+
     // init controller
     let controller = new ScrollMagic.Controller({
         globalSceneOptions: {
@@ -7,16 +27,28 @@ $(function () {
         }
     });
 
+    let h = $('.section.front-cover').height();
+
     // create a scene
     let frontCover = new ScrollMagic.Scene({
-        triggerElement: $('.section.front-cover'),
+        triggerElement: '.section.front-cover',
         duration: "50%"
     })
         .addTo(controller)
+        .on('progress', function (e) {
+
+            let height = h * (1 - e.progress);
+
+            if (height <= $('.uixds-header').height()) {
+                $('.uixds-header').removeClass('invisible');
+            } else {
+                $('.uixds-header').addClass('invisible');
+            }
+        })
         .addIndicators();
 
     let page1 = new ScrollMagic.Scene({
-        triggerElement: $('.section.page-one').get(0),
+        triggerElement: '.section.page-one',
         // duration: "100%",
         // offset: $('.section.page-one').offset().top
     })
@@ -30,7 +62,7 @@ $(function () {
         .addIndicators();
 
     let page2 = new ScrollMagic.Scene({
-        triggerElement: $('.section.page-two').get(0),
+        triggerElement: '.section.page-two',
         // duration: "100%",
         // offset: $('.section.page-two').offset().top
     })
@@ -44,7 +76,7 @@ $(function () {
         .addIndicators();
 
     let page3 = new ScrollMagic.Scene({
-        triggerElement: $('.section.page-three').get(0),
+        triggerElement: '.section.page-three',
         // duration: "100%",
         // offset: $('.section.page-three').offset().top
     })
@@ -58,7 +90,7 @@ $(function () {
         .addIndicators();
 
     let lastPage = new ScrollMagic.Scene({
-        triggerElement: $('.section.page-last').get(0),
+        triggerElement: '.section.page-last',
         // duration: "100%",
         // offset: $('.section.page-last').offset().top
     })

@@ -1,0 +1,31 @@
+#site-header {
+    display: none;
+}
+
+body.side-header #site-wrap {
+    padding: 0;
+}
+
+#main.site-main {
+    padding: 0 !important;
+}
+
+#site-wrap div.body-wrap {
+    max-width: 1920px;
+    padding: 0;
+}
+
+.body-wrap .entry-content {
+    max-width: 1920px;
+
+}
+
+.entry-content div.panel-grid:first-child {
+    margin-top: 0;
+}
+
+#glt-translate-trigger {
+    display: none;
+}
+
+
