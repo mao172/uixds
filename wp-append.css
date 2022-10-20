@@ -33,7 +33,7 @@ body.side-header #site-wrap {
 
 .textwidget:has(form) {
     background-color: #1aaede;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     width: 100%;
     height: 100%;
 }
@@ -153,6 +153,10 @@ body.side-header #site-wrap {
     .form-wrap input[type=checkbox] {
         border-radius: 10px;
         border: solid 2px white;
+    }
+
+    .form-wrap .wpcf7-not-valid-tip {
+        color: white;
     }
 }
 
