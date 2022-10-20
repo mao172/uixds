@@ -4,13 +4,13 @@ $(function () {
     var css = document.createElement("link");
     css.setAttribute("rel", "stylesheet");
     css.setAttribute("type", "text/css");
-    css.setAttribute("href", "./style2.css");
+    css.setAttribute("href", "https://cdn.jsdelivr.net/gh/mao172/uixds@1045190420f076f544ac32e2c11567b29fdc22a9/style2.css");
     document.getElementsByTagName("head")[0].appendChild(css);
 
     var css2 = document.createElement("link");
     css2.setAttribute("rel", "stylesheet");
     css2.setAttribute("type", "text/css");
-    css2.setAttribute("href", "./wp-append.css");
+    css2.setAttribute("href", "https://cdn.jsdelivr.net/gh/mao172/uixds@1045190420f076f544ac32e2c11567b29fdc22a9/wp-append.css");
     document.getElementsByTagName("head")[0].appendChild(css2);
 
     $(window).on("load", function () {
