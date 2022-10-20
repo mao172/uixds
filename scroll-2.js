@@ -4,13 +4,13 @@ $(function () {
     var css = document.createElement("link");
     css.setAttribute("rel", "stylesheet");
     css.setAttribute("type", "text/css");
-    css.setAttribute("href", "https://cdn.jsdelivr.net/gh/mao172/uixds@fc12dced003ee78205101564e15f3a50fbb6ed60/style2.css");
+    css.setAttribute("href", "./style2.css");
     document.getElementsByTagName("head")[0].appendChild(css);
 
     var css2 = document.createElement("link");
     css2.setAttribute("rel", "stylesheet");
     css2.setAttribute("type", "text/css");
-    css2.setAttribute("href", "https://cdn.jsdelivr.net/gh/mao172/uixds@17f87ae1aa96c7c55cfe34b82a4f4d60058537e5/wp-append.css");
+    css2.setAttribute("href", "./wp-append.css");
     document.getElementsByTagName("head")[0].appendChild(css2);
 
     $(window).on("load", function () {
@@ -61,8 +61,13 @@ $(function () {
         .addTo(controller)
         .on('progress', function (e) {
             $("#uixds-image-one").css('opacity', e.progress * 2);
-            $('.section.page-one').children(".overlay-text.invisible").css('opacity', (e.progress - 0.5) * 2 + 0.15);
+            $('.section.page-one').children(".overlay-text.transparent").css('opacity', (e.progress - 0.5) * 2 + 0.15);
 
+            if (e.progress > 0.6) {
+                $('#achievement-button').removeClass('invisible');
+            } else {
+                $('#achievement-button').addClass('invisible');
+            }
         })
         .addIndicators();
 
@@ -75,7 +80,7 @@ $(function () {
         .addTo(controller)
         .on('progress', function (e) {
             $("#uixds-image-two").css('opacity', e.progress * 2);
-            $('.section.page-two').children(".overlay-text.invisible").css('opacity', (e.progress - 0.5) * 2 + 0.15);
+            $('.section.page-two').children(".overlay-text.transparent").css('opacity', (e.progress - 0.5) * 2 + 0.15);
 
         })
         .addIndicators();
@@ -89,7 +94,7 @@ $(function () {
         .addTo(controller)
         .on('progress', function (e) {
             $("#uixds-image-three").css('opacity', e.progress * 2);
-            $('.section.page-three').children(".overlay-text.invisible").css('opacity', (e.progress - 0.5) * 2 + 0.15);
+            $('.section.page-three').children(".overlay-text.transparent").css('opacity', (e.progress - 0.5) * 2 + 0.15);
 
         })
         .addIndicators();

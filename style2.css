@@ -238,6 +238,7 @@ img.full-size {
     transform: translate(-50%, 0);
     opacity: 0.7;
     height: 36%;
+    transition: opacity 300ms 0s ease;
 }
 
 .achievement-button img {
@@ -274,6 +275,13 @@ img.full-size {
 
 .invisible {
     opacity: 0.0;
+    visibility:hidden;
+
+}
+
+.transparent {
+    opacity: 0.0;
+
 }
 
 .uixds-header {
@@ -288,6 +296,7 @@ img.full-size {
     background: transparent;
     background-color: white;
     box-shadow: 0px 0px 30px #2984BA;
+    transition: opacity 300ms 0s ease;
 }
 
 .uixds-header img {

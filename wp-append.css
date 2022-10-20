@@ -61,9 +61,19 @@ body.side-header #site-wrap {
 
 .form-wrap input,
 .form-wrap textarea {
-    width: 100%;
     border-radius: 10px;
     background-color: #eeeeee;
+}
+
+.form-wrap input[type=search],
+.form-wrap input[type=email],
+.form-wrap input[type=text],
+.form-wrap input[type=url],
+.form-wrap input[type=password]
+ {
+    font-size: 1em;
+    width: 100%;
+
 }
 
 .form-wrap span:has(input),
@@ -79,6 +89,33 @@ body.side-header #site-wrap {
     margin-left: 30%;
     margin-top: 8px;
     font-size: x-large;
+}
+
+@media (orientation: portrait) {
+    .form-inner-wrap {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        background: none;
+    }
+
+    .form-inner-wrap:before {
+        color: white;
+    }
+
+    .form-wrap input,
+    .form-wrap textarea {
+        background-color: white;
+    }
+
+    .form-wrap input[type=submit] {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+#footer {
+    background-color: white;
 }
 
 #footer .secondary {
