@@ -33,7 +33,7 @@ body.side-header #site-wrap {
 
 .textwidget:has(form) {
     background-color: #1aaede;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .form-inner-wrap {
@@ -45,7 +45,7 @@ body.side-header #site-wrap {
     border-radius: 50px;
     box-shadow: 0px 0px 16px #999999;
     margin-bottom: 16px;
-    margin-top: 16px;
+    margin-top: 32px;
 }
 
 .form-inner-wrap:before {
@@ -57,6 +57,7 @@ body.side-header #site-wrap {
     font-size: xx-large;
     padding: 4px;
     color: #1aaede;
+    padding-bottom: 32px;
 }
 
 .form-wrap input,
