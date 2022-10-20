@@ -104,7 +104,7 @@ body.side-header #site-wrap {
     padding-left: 8px;
 }
 
-.form-wrap form:last-of-type {
+.form-wrap form div:last-of-type {
     background-color: white;
 }
 
