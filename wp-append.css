@@ -92,8 +92,8 @@ body.side-header #site-wrap {
     font-size: x-large;
 }
 
-.form-wrap input[type=checkbox] ~ span {
-    padding-left: 24px;
+.form-wrap input[type=checkbox]~span {
+    padding-left: 8px;
 }
 
 @media (orientation: portrait) {
@@ -102,6 +102,8 @@ body.side-header #site-wrap {
         border-radius: 0;
         box-shadow: none;
         background: none;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .form-inner-wrap:before {
@@ -113,14 +115,18 @@ body.side-header #site-wrap {
         background-color: white;
     }
 
-    .form-wrap input[type=submit] {
-        width: 90%;
-        margin-left: 5%;
-    }
-
     .form-wrap p:has(input),
     .form-wrap p:has(textarea) {
         width: 80%;
+    }
+
+    .form-wrap p:has(input[type=submit]) {
+        width: 90%;
+    }
+
+    .form-wrap input[type=submit] {
+        width: 100%;
+        margin-left: 0;
     }
 
     .form-wrap label:has(input[type=checkbox]) {
