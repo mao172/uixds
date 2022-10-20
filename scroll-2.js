@@ -10,7 +10,7 @@ $(function () {
     var css2 = document.createElement("link");
     css2.setAttribute("rel", "stylesheet");
     css2.setAttribute("type", "text/css");
-    css2.setAttribute("href", "https://cdn.jsdelivr.net/gh/mao172/uixds@1045190420f076f544ac32e2c11567b29fdc22a9/wp-append.css");
+    css2.setAttribute("href", "https://cdn.jsdelivr.net/gh/mao172/uixds@f8e67fd82e4eb86722006ff8db9aa80eb1fc204d/wp-append.css");
     document.getElementsByTagName("head")[0].appendChild(css2);
 
     $(window).on("load", function () {
