@@ -10,7 +10,7 @@ $(function () {
     var css2 = document.createElement("link");
     css2.setAttribute("rel", "stylesheet");
     css2.setAttribute("type", "text/css");
-    css2.setAttribute("href", "https://cdn.jsdelivr.net/gh/mao172/uixds@91115bd0a6c9c9bec3fb1f77055754d88f13fefc/wp-append.css");
+    css2.setAttribute("href", "https://cdn.jsdelivr.net/gh/mao172/uixds@783848b9043f79910fcc40581e60765dbe89e898/wp-append.css");
     document.getElementsByTagName("head")[0].appendChild(css2);
 
     $(window).on("load", function () {
@@ -40,6 +40,7 @@ $(function () {
         duration: "50%"
     })
         .addTo(controller)
+        // .addIndicators()
         .on('progress', function (e) {
 
             let height = h * (1 - e.progress);
@@ -49,8 +50,7 @@ $(function () {
             } else {
                 $('.uixds-header').addClass('invisible');
             }
-        })
-        .addIndicators();
+        });
 
     let page1 = new ScrollMagic.Scene({
         triggerElement: '.section.page-one',
@@ -59,6 +59,7 @@ $(function () {
     })
         .setPin('.section.page-one', { pushFollowers: true })
         .addTo(controller)
+        // .addIndicators()
         .on('progress', function (e) {
             $("#uixds-image-one").css('opacity', e.progress * 2);
             $('.section.page-one').children(".overlay-text.transparent").css('opacity', (e.progress - 0.5) * 2 + 0.15);
@@ -68,8 +69,7 @@ $(function () {
             } else {
                 $('#achievement-button').addClass('invisible');
             }
-        })
-        .addIndicators();
+        });
 
     let page2 = new ScrollMagic.Scene({
         triggerElement: '.section.page-two',
@@ -78,12 +78,12 @@ $(function () {
     })
         .setPin('.section.page-two', { pushFollowers: true })
         .addTo(controller)
+        // .addIndicators()
         .on('progress', function (e) {
             $("#uixds-image-two").css('opacity', e.progress * 2);
             $('.section.page-two').children(".overlay-text.transparent").css('opacity', (e.progress - 0.5) * 2 + 0.15);
 
-        })
-        .addIndicators();
+        });
 
     let page3 = new ScrollMagic.Scene({
         triggerElement: '.section.page-three',
@@ -92,12 +92,12 @@ $(function () {
     })
         .setPin('.section.page-three', { pushFollowers: true })
         .addTo(controller)
+        // .addIndicators()
         .on('progress', function (e) {
             $("#uixds-image-three").css('opacity', e.progress * 2);
             $('.section.page-three').children(".overlay-text.transparent").css('opacity', (e.progress - 0.5) * 2 + 0.15);
 
-        })
-        .addIndicators();
+        });
 
     let lastPage = new ScrollMagic.Scene({
         triggerElement: '.section.page-last',
@@ -106,6 +106,7 @@ $(function () {
     })
         .setPin('.section.page-last', { pushFollowers: true })
         .addTo(controller)
+        // .addIndicators()
         .on('progress', function (e) {
             $("#uixds-image-last").css('opacity', e.progress * 2);
             // $('.section.page-three').children(".overlay-text.invisible").css('opacity', (e.progress - 0.5) * 2 + 0.15);
@@ -116,8 +117,7 @@ $(function () {
                 $('#achievement-button').addClass('float');
             }
 
-        })
-        .addIndicators();
+        });
 
     // new ScrollMagic.Scene({
     //     triggerElement: $('.section.page-last').get(0),
