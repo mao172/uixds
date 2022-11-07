@@ -1,0 +1,357 @@
+body {
+    font-family: "BIZ UDPGothic", Avenir, Verdana, Arial, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Roboto, Meiryo, sans-serif;
+    line-height: 2em;
+    box-sizing: border-box;
+}
+
+/* img {
+    max-width:none ;
+    margin:0;
+} */
+
+.slider-container {
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+.slider div {
+    max-width: none;
+
+}
+
+.slider div:has(li) {
+    height: 100%;
+}
+
+ul.slider {
+    padding: 0;
+    margin: 0;
+}
+
+.section {
+    background-color: #1aaede;
+}
+
+.section.content {
+
+    padding-top: 92px;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: auto;
+    padding-bottom: 2em;
+}
+
+.page {
+    padding: 0 5%;
+    height: auto;
+    min-height: 100vh;
+    border-radius: 2em;
+    background-color: #FFF;
+    color: #888;
+    padding-bottom: 2em;
+}
+
+.page>div {
+    /* background-color: #FFF; */
+
+}
+
+@media (orientation: portrait) {
+    .section.content {
+        padding-top: 52px;
+    }
+}
+
+h1 {
+    display: block;
+    position: relative;
+    font-size: large;
+    font-weight: bold;
+    color: #888;
+    line-height: 2.6em;
+    /* margin-top: 0; */
+}
+
+h1>span:first-of-type {
+    display: inline-block;
+    position: relative;
+    top: -1em;
+    margin-right: 4em;
+}
+
+h1>span:first-of-type::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    border-bottom: 2px solid #f5c05a;
+    position: absolute;
+    top: 2.2em;
+    left: 0;
+}
+
+h1>span:first-of-type:first-letter {
+    font-size: 200%;
+    color: #1aaede;
+}
+
+h1>span:first-of-type>span {
+    display: inline-block;
+    position: absolute;
+    top: 1.6em;
+    left: 0;
+    /* transform: translate(-50%, 0); */
+    white-space: nowrap
+}
+
+h1>span:last-of-type {
+    display: inline-block;
+    position: relative;
+    font-size: 180%;
+    top: 1em;
+}
+
+h1>span:last-of-type::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: -0.8em;
+    width: 100%;
+    /* border-bottom: 0.2em solid #ccc; */
+    border-top: 0.2em solid #f5c05a;
+}
+
+.thumbnails-area {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 1.6em;
+    padding-bottom: 1.6em;
+}
+
+.thumbnail {
+    width: 22%;
+    box-shadow: 0 0 10px #ccc;
+    background-color: #FFF;
+    border-radius: 10px;
+
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.thumbnail:nth-of-type(1) {
+    position: relative;
+    /* top: 120px; */
+}
+
+.thumbnail:nth-of-type(2) {
+    position: relative;
+    /* top: 60px; */
+}
+
+.thumbnail:nth-of-type(3) {
+    position: relative;
+    /* top: 30px; */
+}
+
+.thumbnail:nth-of-type(4) {
+    position: relative;
+    /* top: 0px; */
+}
+
+.thumbnail img {}
+
+@media (orientation: portrait),
+(max-width: 1020px) {
+    .thumbnail {
+        width: 46%;
+    }
+
+    .thumbnail:nth-of-type(2n+1) {
+        /* top: 30px; */
+    }
+
+    .thumbnail:nth-of-type(2n) {
+        /* top: 0px; */
+    }
+
+    .thumbnails-area {
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 550px) {
+    .thumbnail {
+        width: 90%;
+    }
+}
+
+div>p {
+
+    position: relative;
+    display: inline-block;
+    left: 100%;
+    transform: translate(-100%, 0);
+}
+
+div>p:after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    border-top: 0.2em solid #f5c05a;
+    top: -1em;
+
+}
+
+.effectiveness {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 1em;
+    padding-bottom: 1.6em;
+    clear: both;
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+.effectiveness>div {
+    width: 42%;
+    position: relative;
+    border: 2px solid #1aaede;
+    border-radius: 1em;
+    padding: 1em;
+    background-color: #fff;
+    margin-bottom: 2em;
+}
+
+.effectiveness>div>span {
+    display: block;
+    position: relative;
+    min-height: 2em;
+
+}
+
+.effectiveness>div>.down,
+.effectiveness>div>.up {
+    font-size: xx-large;
+    color: #1aaede;
+    min-height: auto;
+
+}
+
+@media (orientation: portrait),
+(max-width: 1020px) {
+    .effectiveness {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .effectiveness>div {
+        width: 64%;
+    }
+
+    .effectiveness>div>.down,
+    .effectiveness>div>.up {
+        font-size: x-large;
+    }
+
+
+}
+
+.technical-elements {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 1em;
+    padding-bottom: 1.6em;
+    clear: both;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.technical-elements .logo {
+    width: 22%;
+    height: 3em;
+}
+
+.technical-elements .logo>div {
+    height: 100%;
+}
+
+.technical-elements .logo>div>img {
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (orientation: portrait),
+(max-width: 1020px) {
+    .technical-elements .logo {
+        width: 42%;
+    }
+}
+
+.down::before {
+    content: "▼"
+}
+
+.up::before {
+    content: "▲";
+}
+
+.case-1 {
+    background-image: url(https://uixds.jp/wp-content/uploads/sites/18/2022/10/fc226ad7618f28a3dfe067d55cdb05dc.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.case-2 {
+    background-image: url(https://uixds.jp/wp-content/uploads/sites/18/2022/10/73886ca061afdb5b6c93f742c704f1f0.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.slider-item>span {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2em;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.slick-dots {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0;
+}
+
+.slider-area {
+    height: 100vh;
+    padding-top: 92px;
+    background-color: white;
+}
+
+.slider.float {
+    position: fixed;
+    z-index: 80;
+    width: 100%;
+
+    box-shadow: 0px 0px 30px #2984BA;
+    transition: opacity 300ms 0s ease;
+}
+
+.slider.float li>span {
+    font-size: medium;
+}
+
+.slider.float .slider-item {
+    background-image: none;
+}
+
+.hide {
+    display: none;
+}
