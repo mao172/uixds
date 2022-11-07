@@ -355,3 +355,11 @@ div>p:after {
 .hide {
     display: none;
 }
+
+.content-area .slick-dots {
+    margin: 0;
+}
+
+.content-area .hide {
+    display: none;
+}
