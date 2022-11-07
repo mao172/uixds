@@ -2,9 +2,9 @@
 
 $(function () {
 
-    var js2 = document.createElement("script");
-    js2.setAttribute("src", "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js");
-    document.getElementsByTagName("head")[0].appendChild(js2);
+    // var js2 = document.createElement("script");
+    // js2.setAttribute("src", "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js");
+    // document.getElementsByTagName("head")[0].appendChild(js2);
 
     var css2 = document.createElement("link");
     css2.setAttribute("rel", "stylesheet");

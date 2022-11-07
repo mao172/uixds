@@ -41,7 +41,7 @@ ul.slider {
     padding-bottom: 2em;
 }
 
-.page {
+.section.page {
     padding: 0 5%;
     height: auto;
     min-height: 100vh;
@@ -51,7 +51,7 @@ ul.slider {
     padding-bottom: 2em;
 }
 
-.page>div {
+.section.page>div {
     /* background-color: #FFF; */
 
 }
