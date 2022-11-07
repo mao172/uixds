@@ -1,6 +1,6 @@
 
 
-$(function () {
+jQuery(function () {
 
     // var js2 = document.createElement("script");
     // js2.setAttribute("src", "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js");
@@ -37,7 +37,8 @@ $(function () {
     document.getElementsByTagName("head")[0].appendChild(css);
 });
 
-$(function () {
+// jQuery.noConflict();
+jQuery(function ($) {
 
     // init controller
     let controller = new ScrollMagic.Controller({
@@ -109,4 +110,4 @@ $(function () {
             });
     });
 
-});
+})(jQuery);
