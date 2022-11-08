@@ -33,7 +33,7 @@ jQuery(function () {
     css = document.createElement("link");
     css.setAttribute("rel", "stylesheet");
     css.setAttribute("type", "text/css");
-    css.setAttribute("href", "./achievement.css");
+    css.setAttribute("href", "https://cdn.jsdelivr.net/gh/mao172/uixds@58f0724b4840e6155c42412755de898b2cd76043/achievement.css");
     document.getElementsByTagName("head")[0].appendChild(css);
 });
 
@@ -80,7 +80,7 @@ jQuery(function () {
                 // $('.section.content').css('left', $('.section.content').width());
                 // $($('.section.content').get(currentSlide)).css('left', '0');
                 // console.log('translate(-' + ($($('.section.content').get(0)).outerWidth() * (currentSlide) ) + ', 0)');
-                $('.section.content-wrap').css('transform', 'translate(-' + ($($('.section.content').get(0)).outerWidth() * (currentSlide) ) + 'px, 0)');
+                $('.section.content-wrap').css('transform', 'translate(-' + ($($('.section.content').get(0)).outerWidth() * (currentSlide)) + 'px, 0)');
             });
 
             let h = $('.slider-container').innerHeight();
