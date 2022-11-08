@@ -33,7 +33,7 @@ jQuery(function () {
     css = document.createElement("link");
     css.setAttribute("rel", "stylesheet");
     css.setAttribute("type", "text/css");
-    css.setAttribute("href", "https://cdn.jsdelivr.net/gh/mao172/uixds@66d71dd20f98563f97ae5cd5e0e36850f9493ad8/achievement.css");
+    css.setAttribute("href", "./achievement.css");
     document.getElementsByTagName("head")[0].appendChild(css);
 });
 
@@ -77,9 +77,10 @@ jQuery(function () {
             });
             $('.slider').on('afterChange', function (event, slick, currentSlide) {
                 // console.log(currentSlide);
-                $('.section.content').css('z-index', '0');
-                $($('.section.content').get(currentSlide)).css('z-index', '2');
-                $('.section.content:last').css('z-index', '1');
+                // $('.section.content').css('left', $('.section.content').width());
+                // $($('.section.content').get(currentSlide)).css('left', '0');
+                // console.log('translate(-' + ($($('.section.content').get(0)).outerWidth() * (currentSlide) ) + ', 0)');
+                $('.section.content-wrap').css('transform', 'translate(-' + ($($('.section.content').get(0)).outerWidth() * (currentSlide) ) + 'px, 0)');
             });
 
             let h = $('.slider-container').innerHeight();
@@ -92,7 +93,7 @@ jQuery(function () {
                 .addTo(controller)
                 .addIndicators()
                 .on('progress', function (e) {
-                    console.log(e, h);
+                    // console.log(e, h);
                     // $('.slider-container').css('height', h * (1.0 - e.progress));
                     let height = innerHeight * (1.0 - e.progress);
 
