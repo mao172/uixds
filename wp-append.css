@@ -108,6 +108,10 @@ body.side-header #site-wrap {
     background-color: white;
 }
 
+.annotation a {
+    color: #f5c05a;
+}
+
 @media (orientation: portrait) {
     .form-content {
         margin-top: 32px;
@@ -121,7 +125,7 @@ body.side-header #site-wrap {
         background: none;
         padding-left: 0;
         padding-right: 0;
-        color:white;
+        /* color:white; */
     }
 
     .form-inner-wrap:before {
@@ -158,6 +162,14 @@ body.side-header #site-wrap {
 
     .form-wrap .wpcf7-not-valid-tip {
         color: white;
+    }
+
+    .annotation {
+        color: white;
+    }
+
+    .annotation a {
+        color: #f5c05a;
     }
 }
 

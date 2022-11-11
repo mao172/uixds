@@ -65,7 +65,7 @@ $(function () {
             $('.section.page-one').children(".overlay-text.transparent").css('opacity', (e.progress - 0.5) * 2 + 0.15);
 
             if (e.progress > 0.6) {
-                $('#achievement-button').removeClass('invisible');
+                // $('#achievement-button').removeClass('invisible');
             } else {
                 $('#achievement-button').addClass('invisible');
             }

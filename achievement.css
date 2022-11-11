@@ -77,6 +77,8 @@ ul.slider {
 @media (orientation: portrait) {
     .section.content {
         padding-top: 52px;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 }
 
@@ -382,4 +384,9 @@ div>p:after {
 
 .content-area .hide {
     display: none;
+}
+
+#footer {
+    width: 100vw;
+    max-width: 1920px;
 }
