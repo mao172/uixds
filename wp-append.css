@@ -173,6 +173,14 @@ body.side-header #site-wrap {
     }
 }
 
+.block {
+    display: block;
+}
+
+.center {
+    text-align: center;
+}
+
 #footer {
     background-color: white;
 }
