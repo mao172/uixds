@@ -97,6 +97,7 @@ h1>span:first-of-type {
     position: relative;
     top: -1em;
     margin-right: 4em;
+    white-space: nowrap;
 }
 
 h1>span:first-of-type::after {
@@ -138,6 +139,22 @@ h1>span:last-of-type::after {
     width: 100%;
     /* border-bottom: 0.2em solid #ccc; */
     border-top: 0.2em solid #f5c05a;
+}
+
+@media (orientation: portrait) {
+    section.content {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    h1 {
+        line-height: 1.3em;
+        margin-top: 2em;
+    }
+
+    h1>span:first-of-type::after {
+        top: 1.6em;
+    }
 }
 
 .thumbnails-area {
@@ -205,7 +222,7 @@ h1>span:last-of-type::after {
     }
 }
 
-div>p {
+div.introduction>p {
 
     position: relative;
     display: inline-block;
@@ -213,7 +230,7 @@ div>p {
     transform: translate(-100%, 0);
 }
 
-div>p:after {
+div.introduction>p:after {
     content: "";
     display: inline-block;
     position: relative;
@@ -389,4 +406,9 @@ div>p:after {
 #footer {
     width: 100vw;
     max-width: 1920px;
+}
+
+.slick-dots button {
+    width: 16px;
+    height: 16px;
 }
