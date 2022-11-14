@@ -400,6 +400,10 @@ div.introduction>p:after {
     background-image: none;
 }
 
+.slider.float .slick-dots {
+    display: none;
+}
+
 .hide {
     display: none;
 }
