@@ -27,15 +27,13 @@ jQuery(function () {
     css = document.createElement("link");
     css.setAttribute("rel", "stylesheet");
     css.setAttribute("type", "text/css");
-    // css.setAttribute("href", "https://cdn.jsdelivr.net/gh/mao172/uixds@c19ae159088e567d102aca82cb7a2b303e920215/slider.css");
-    css.setAttribute("href", "./slider.css");
+    css.setAttribute("href", "https://cdn.jsdelivr.net/gh/mao172/uixds@6baa493b9d53f1ba564532a003696bd77a6fd142/slider.css");
     document.getElementsByTagName("head")[0].appendChild(css);
 
     css = document.createElement("link");
     css.setAttribute("rel", "stylesheet");
     css.setAttribute("type", "text/css");
-    // css.setAttribute("href", "https://cdn.jsdelivr.net/gh/mao172/uixds@4e258694696716c69fec835029303f2b8d90e151/achievement.css");
-    css.setAttribute("href", "./achievement.css");
+    css.setAttribute("href", "https://cdn.jsdelivr.net/gh/mao172/uixds@6baa493b9d53f1ba564532a003696bd77a6fd142/achievement.css");
     document.getElementsByTagName("head")[0].appendChild(css);
 });
 
