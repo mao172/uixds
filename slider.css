@@ -1,4 +1,4 @@
-        /*==================================================
+/*==================================================
 スライダーのためのcss
 ===================================*/
 .slider {
@@ -58,34 +58,37 @@
     right: 2.5%;
 }
 
-.float .slick-prev, .float .slick-next {
+.float .slick-prev,
+.float .slick-next {
     top: 24%;
 }
 
-.slick-prev:after, .slick-next:after {
+.slick-prev:after,
+.slick-next:after {
     content: "";
     display: block;
     position: relative;
     border-top: 2px solid #eee;
     border-right: 2px solid #eee;
-    height: 22px;
-    width: 22px;
+    height: 16px;
+    width: 16px;
 }
 
 .slick-prev:after {
-    
+
     /*戻る矢印の位置と形状*/
     /* left: 2.5%; */
     transform: rotate(-135deg);
-    top:0.5em;
-    left:1em;
+    top: 11px;
+    left: 18px;
 }
 
 .slick-next:after {
     /*次へ矢印の位置と形状*/
     /* right: 2.5%; */
     transform: rotate(45deg);
-    top:0.5em;
+    top: 11px;
+    left: 6px;
 }
 
 /*ドットナビゲーションの設定*/
