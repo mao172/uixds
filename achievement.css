@@ -401,7 +401,32 @@ div.introduction>p:after {
 }
 
 .slider.float .slick-dots {
-    display: none;
+    /* display: none; */
+    margin: 0;
+    height: 2px;
+    line-height: normal;
+    width: 100%;
+    margin-top: -8px;
+}
+
+.slider.float .slick-dots li {
+    margin: 0;
+    width: 25%;
+}
+
+.float .slick-dots button {
+
+    border: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 0;
+}
+
+.float .slick-dots .slick-active button {
+    background-color: #f5c05a;
+    border: none;
+    width: 100%;
+    height: 6px;
 }
 
 .hide {
