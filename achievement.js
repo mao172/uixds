@@ -27,7 +27,7 @@ jQuery(function () {
     css = document.createElement("link");
     css.setAttribute("rel", "stylesheet");
     css.setAttribute("type", "text/css");
-    css.setAttribute("href", "https://cdn.jsdelivr.net/gh/mao172/uixds@6baa493b9d53f1ba564532a003696bd77a6fd142/slider.css");
+    css.setAttribute("href", "https://cdn.jsdelivr.net/gh/mao172/uixds@bbdf2c47846ef98f275b65932f31b8a5ddf7d6d6/slider.css");
     document.getElementsByTagName("head")[0].appendChild(css);
 
     css = document.createElement("link");
