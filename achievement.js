@@ -58,7 +58,8 @@ jQuery(function () {
             })
                 // .setPin(elem, { pushFollowers: true })
                 .addTo(controller)
-                .addIndicators();
+                // .addIndicators()
+                ;
         });
 
         $(window).on("load", function () {
@@ -81,6 +82,9 @@ jQuery(function () {
                 // $($('.section.content').get(currentSlide)).css('left', '0');
                 // console.log('translate(-' + ($($('.section.content').get(0)).outerWidth() * (currentSlide) ) + ', 0)');
                 $('.section.content-wrap').css('transform', 'translate(-' + ($($('.section.content').get(0)).outerWidth() * (currentSlide)) + 'px, 0)');
+
+                $("html, body").animate({ scrollTop: 0 }, 200);
+
             });
 
             let h = $('.slider-container').innerHeight();
@@ -91,7 +95,7 @@ jQuery(function () {
                 triggerElement: '#slider-area'
             })
                 .addTo(controller)
-                .addIndicators()
+                // .addIndicators()
                 .on('progress', function (e) {
                     // console.log(e, h);
                     // $('.slider-container').css('height', h * (1.0 - e.progress));
