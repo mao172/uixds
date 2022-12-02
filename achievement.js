@@ -33,7 +33,7 @@ jQuery(function () {
     css = document.createElement("link");
     css.setAttribute("rel", "stylesheet");
     css.setAttribute("type", "text/css");
-    css.setAttribute("href", "https://cdn.jsdelivr.net/gh/mao172/uixds@2d9bbb127d8b943fa5513e75497c2f9716c9b9c2/achievement.css");
+    css.setAttribute("href", "https://cdn.jsdelivr.net/gh/mao172/uixds@6dc5b22c72b233f1ee88b0e69088027afca8528a/achievement.css");
     document.getElementsByTagName("head")[0].appendChild(css);
 });
 
