@@ -36,6 +36,7 @@ ul.slider {
     overflow: hidden;
     display: block;
     position: relative;
+    background-color: #1aaede;
 }
 
 .section.content-wrap {
